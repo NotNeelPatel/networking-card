@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Neel Patel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="card-out">
+        <div class="card">
+          <div class="card-front" style="transform: rotateY(180deg)">
+            <div class="content-top" style="padding-top: 5px">
+              <span style="font-size: 45px"> Neel Patel </span>
+              <a href="mailto:neelpatel4@cmail.carleton.ca"
+                ><span style="float: right">
+                  neelpatel4@cmail.carleton.ca
+                </span></a
+              >
+              <hr />
+            </div>
+            <div class="content-top-mid">
+              <div id="me" style="display: inline-block; width: 130px"></div>
+              <div style="display: inline-block; vertical-align: top">
+                <span
+                  style="font-size: 28px; font-style: italic; font-weight: bold"
+                >
+                  Computer Systems Engineering Student
+                </span>
+                <p style="color: #777">Carleton University</p>
+
+                <div
+                  style="
+                    background: #fff;
+                    margin-top: 15px;
+                    padding-right: 7px;
+                    width: max-content;
+                    border: 1px solid #fff;
+                  "
+                >
+                  <img
+                    src="./assets/in.svg"
+                    background:#fff
+                    style="width: 50px; vertical-align: middle"
+                  />
+                  <a
+                    style="color: #000"
+                    href="https://www.linkedin.com/in/notneelpatel/"
+                    >/notneelpatel</a
+                  >
+                  <img
+                    src="./assets/gh.svg"
+                    background:#fff
+                    style="width: 50px; vertical-align: middle"
+                  />
+                  <a style="color: #000" href="https://github.com/notneelpatel"
+                    >/notneelpatel</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="content-bot-mid">
+              <canvas
+                width="690px"
+                height="130px"
+                id="canvas"
+                style="display: inline-block"
+              ></canvas>
+            </div>
+
+            <div class="content-bottom" style="padding-bottom: 5px">
+              <hr />
+              <span style="line-height: 75px">(613)-***-**** </span>
+              <span style="font-size: 45px; float: right"> Neel Patel </span>
+            </div>
+          </div>
+          <div class="card-back">
+            <img src="./assets/np.png" style="width: 350px; margin-top: 15px" />
+            <p>flip me!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      let len = 2;
+      let rand = 1;
+      let check = [0, 0, 0];
+      rand = Math.random();
+      rand = Math.floor(rand * len);
+      let image = rand;
+      var image_node = new Image();
+      image_node.alt = "pic";
+      image_node.src = "./assets/me" + rand + ".jpg";
+      document.getElementById("me").appendChild(image_node);
+    </script>
+    <script src="matrix.js"></script>
+    <footer>
+      <p
+        style="
+          margin-top: 850px;
+          text-align: center;
+          color: #777;
+          font-size: 12px;
+        "
+      >
+        this networking card was written with HTML, CSS, and JS. Check out the
+        source code
+        <a href="https://github.com/NotNeelPatel/networking-card">here</a>
+      </p>
+    </footer>
+  </body>
+</html>
