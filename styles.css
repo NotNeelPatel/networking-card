@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
 *,
 *::before,
 *::after {
