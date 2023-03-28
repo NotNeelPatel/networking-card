@@ -27,6 +27,10 @@ const wordlist = [
   "web-dev",
   "blog",
   "inspiration",
+  "assembly",
+  "silly",
+  "vim",
+  "bash",
 ];
 
 ctx.fillStyle = "#000";
